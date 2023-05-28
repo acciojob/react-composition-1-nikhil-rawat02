@@ -8,7 +8,7 @@ function Tabs(props) {
     <div>
       {
         tabs.map((element) =>(
-            <ul key = {element.title} onClick={()=>{setOutput(`${element.content}`)}}>
+            <ul key = {element.title} onClick={()=>{setOutput(element.title)}}>
                 <li>{element.title}</li>
             </ul>
         ))
